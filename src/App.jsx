@@ -7,6 +7,7 @@ import Greeting from './components/Greeting/Greeting';
 import Card from './components/Memory/Card';
 import Stopwatch from './components/Stopwatch/Stopwatch';
 import TodoAll from './components/TodoFolder/TodoAll';
+import ChangeBackgroundImage from "./components/ChangeBackground/Changebackground";
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/react-examination/Projects/Stopwatch" element={<Stopwatch />} />
         <Route path="/react-examination/Projects/TodoAll" element={<TodoAll />} />
       </Routes>
+      <ChangeBackgroundImage />
     </>
   )
 }

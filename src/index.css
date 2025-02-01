@@ -30,7 +30,6 @@ body {
   padding: 10px;
   border: none;
   margin: 5px;
-  border-radius: 5px;
 }
 
 .headNav button:hover {
@@ -50,29 +49,35 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgba(255, 255, 255, 0);
+  background: hsla(0, 0%, 0%, 0.7);
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  width: 150px;
 }
 
 .dropdown-menu li {
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .dropdown-menu button {
   height: 80px;
   width: 100px;
+  border-radius: 0;
+  margin: 0;
+}
+
+.dropdown-menu a {
+  margin: 0;
 }
 
 /* -------------------------------------------------------------------- */
 
 .headNav {
-  width: 100%;
-  height: 110px;
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -89,8 +94,7 @@ body {
 }
 
 .greetings-container {
-  width: 95svw;
-  height: 80svh;
+  margin-top: 5svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,10 +107,11 @@ body {
   max-width: 50vw;
   min-width: 330px;
   text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .greetings h1 {
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 0px 3px black;
 }
 
 h1 {
@@ -125,22 +130,23 @@ input {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #4caf50;
+  background-color: hsl(122, 39%, 50%);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0;
   cursor: pointer;
   margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: hsl(122, 39%, 40%);
+  color: white;
 }
 
 button:active {
-  color: black;
-  background-color: rgb(172, 172, 172);
+  color: white;
+  background-color: hsl(122, 39%, 55%);
 }
 
 a {
@@ -157,29 +163,30 @@ a:active {
 }
 
 .memory-main {
-  min-height: 80svh;
-  margin-top: 10svh;
-  margin-bottom: 20svh;
-}
-
-.memory-main {
-  width: 95svw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   overflow-x: hidden;
-  background-color: hsl(0, 0%, 100%, 0.5);
   border-radius: 8px;
+  margin-top: 5svh;
+}
+
+.memory-container {
+  width: 370px;
+  background-color: hsl(0, 0%, 100%, 0.5);
 }
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  max-width: 34svw;
-  min-width: 350px;
   height: 330px;
+  width: 370px;
+
+  align-items: center;
+  text-align: center;
 }
 
 .card {
@@ -205,22 +212,20 @@ h2 {
 }
 
 .stopwatch-container {
-  width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 0svh;
+  margin-top: 5svh;
 }
 
 .stopwatch {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid black 1px;
   border-radius: 5px;
   background-color: hsla(0, 0%, 100%, 0.408);
-  margin-top: 20vh;
   height: auto;
   padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .display {
@@ -238,40 +243,61 @@ h2 {
   transition: background-color 0.5 ease;
   padding: 10px;
   width: 100px;
+  box-shadow: 0 0 2px rgb(0, 0, 0);
 }
 
 .startBtn {
-  background-color: green;
+  background-color: hsl(120, 100%, 25%);
   color: white;
   text-shadow: 1px 1px 1px black;
 }
 
 .startBtn:hover {
-  background-color: hsl(120, 100%, 35%);
+  background-color: hsl(120, 100%, 20%);
   color: white;
   text-shadow: 1px 1px 1px black;
+}
+
+.startBtn:active {
+  background-color: hsl(120, 100%, 30%);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 0 0 5px rgba(0, 0, 0);
 }
 
 .stopBtn {
-  background-color: rgba(170, 170, 170, 0.774);
+  background-color: hsl(0, 0%, 70%);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.stopBtn:hover {
+  background-color: hsla(0, 0%, 65%);
   color: white;
   text-shadow: 1px 1px 1px black;
 }
 
-.stopBtn:hover {
-  background-color: hsla(0, 0%, 80%, 0.774);
+.stopBtn:active {
+  background-color: hsla(0, 0%, 75%);
   color: white;
   text-shadow: 1px 1px 1px black;
 }
 
 .resetBtn {
-  background-color: red;
+  background-color: hsl(0, 100%, 40%);
   color: white;
   text-shadow: 1px 1px 1px black;
 }
 
 .resetBtn:hover {
-  background-color: hsl(0, 100%, 70%);
+  background-color: hsl(0, 100%, 35%);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.resetBtn:active {
+  background-color: hsl(0, 100%, 45%);
   color: white;
   text-shadow: 1px 1px 1px black;
 }
@@ -280,9 +306,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95svw;
-  margin-top: 0svh;
-  height: 80svh;
+  margin-top: 5svh;
 }
 
 .app {
@@ -342,9 +366,37 @@ li span {
 }
 
 .BgFix {
-  margin-top: 5svh;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  align-self: flex-end;
+}
+
+.BgFix button {
+  background-color: black;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.dropdown-menu1 {
+  list-style: none;
+  padding: 10px;
+  background: hsla(0, 0%, 0%, 0.7);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  bottom: 0;
+  margin-top: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu1 li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu1 li:hover {
+  background: #f0f0f0;
 }
