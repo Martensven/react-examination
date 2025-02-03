@@ -1,3 +1,7 @@
+html {
+  font-family: monospace;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,7 +10,6 @@ body {
   color: black;
   width: 100vw;
   height: 100svh;
-  font-family: monospace;
   margin: 0;
   padding: 0;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3b/Good_Morning_From_the_International_Space_Station.jpg");
@@ -17,7 +20,7 @@ body {
 }
 
 .headNav {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: hsla(0, 0%, 20%, 0.7);
   width: 100vw;
   height: 10svh;
   display: flex;
@@ -28,7 +31,7 @@ body {
 }
 
 .headNav button {
-  background-color: hsl(226, 100%, 70%);
+  background-color: hsla(0, 0%, 10%, 0.7);
   color: white;
   text-shadow: 1px 1px 1px black;
   padding: 10px;
@@ -37,11 +40,11 @@ body {
 }
 
 .headNav button:hover {
-  background-color: hsl(226, 100%, 65%);
+  background-color: hsla(0, 0%, 5%, 0.7);
 }
 
 .headNav button:active {
-  background-color: hsl(226, 100%, 75%);
+  background-color: hsla(0, 0%, 15%, 0.7);
 }
 
 .dropdown {
@@ -53,7 +56,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background: hsla(0, 0%, 0%, 0.7);
+  background-color: hsla(0, 0%, 20%, 0.7);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -78,7 +81,47 @@ body {
   margin: 0;
 }
 
-/* -------------------------------------------------------------------- */
+.home-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-p {
+  width: 70%;
+  text-align: center;
+}
+
+.about-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-p {
+  width: 70%;
+  text-align: center;
+}
+
+.contact-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-h2 a {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
 
 .headNav {
   height: fit-content;
@@ -180,15 +223,19 @@ a:active {
 .memory-container {
   width: 370px;
   background-color: hsl(0, 0%, 100%, 0.5);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  margin: auto;
+  padding: auto;
   height: 330px;
   width: 370px;
-
   align-items: center;
   text-align: center;
 }
@@ -198,6 +245,8 @@ a:active {
   height: 72.5px;
   background-color: rgb(81, 255, 0);
   border: 2px rgb(54, 54, 54) dotted;
+  align-self: center;
+  justify-self: center;
 }
 
 p {
@@ -370,7 +419,7 @@ li span {
 }
 
 .BgFix {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
 }
