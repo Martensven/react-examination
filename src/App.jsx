@@ -17,14 +17,14 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="/react-examination/Home" element={<Home />} />
-        <Route path="/react-examination/About" element={<About />} />
-        <Route path="/react-examination/Projects" element={<Projects />} />
-        <Route path="/react-examination/Contact" element={<Contact />} />
-        <Route path="/react-examination/Projects/Greeting" element={<Greeting />} />
-        <Route path="/react-examination/Projects/Memory" element={<Card />} />
-        <Route path="/react-examination/Projects/Stopwatch" element={<Stopwatch />} />
-        <Route path="/react-examination/Projects/TodoAll" element={<TodoAll />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Projects/Greeting" element={<Greeting />} />
+        <Route path="/Projects/Memory" element={<Card />} />
+        <Route path="/Projects/Stopwatch" element={<Stopwatch />} />
+        <Route path="/Projects/TodoAll" element={<TodoAll />} />
       </Routes>
       <ChangeBackgroundImage />
     </>
