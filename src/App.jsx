@@ -7,11 +7,12 @@ import Greeting from './components/Greeting/Greeting';
 import Card from './components/Memory/Card';
 import Stopwatch from './components/Stopwatch/Stopwatch';
 import TodoAll from './components/TodoFolder/TodoAll';
+import MovieSearch from "./components/MovieSearch/Movies";
 import ChangeBackgroundImage from "./components/ChangeBackground/Changebackground";
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-
+  //Vi lägger först in NavBar som konstant ska synas, sedan alla routes som ska synas i navbar. Vi avslutar sedan med ChangeBackgroundImage som styr bakgrundsbilden och själva temat på applikationen.
 
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Projects/Memory" element={<Card />} />
         <Route path="/Projects/Stopwatch" element={<Stopwatch />} />
         <Route path="/Projects/TodoAll" element={<TodoAll />} />
+        <Route path="/Projects/MovieSearch" element={<MovieSearch />} />
       </Routes>
       <ChangeBackgroundImage />
     </>

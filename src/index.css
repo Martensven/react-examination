@@ -50,6 +50,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 999;
 }
 
 .dropdown-menu {
@@ -62,12 +63,14 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  z-index: 999;
 }
 
 .dropdown-menu li {
   text-align: left;
   padding: 0;
   margin: 0;
+  z-index: 999;
 }
 
 .dropdown-menu button {
