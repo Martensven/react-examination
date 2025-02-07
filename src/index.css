@@ -91,11 +91,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgba(114, 114, 114, 0.486);
 }
 
 .home-p {
   width: 70%;
   text-align: center;
+  font-size: larger;
 }
 
 .about-div {
@@ -105,11 +107,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgba(114, 114, 114, 0.486);
 }
 
 .about-p {
   width: 70%;
   text-align: center;
+  font-size: larger;
 }
 
 .contact-div {
@@ -119,6 +123,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgba(114, 114, 114, 0.486);
 }
 
 .contact-h2 a {
@@ -151,7 +156,7 @@ body {
 }
 
 .greetings {
-  background-color: rgba(255, 255, 255, 0.486);
+  background-color: rgba(114, 114, 114, 0.486);
   border-radius: 5px;
   padding: 20px;
   max-width: 50vw;
@@ -221,11 +226,13 @@ a:active {
   overflow-x: hidden;
   border-radius: 8px;
   margin-top: 5svh;
+  background-color: rgba(114, 114, 114, 0.486);
+  font-size: medium;
 }
 
 .memory-container {
   width: 370px;
-  background-color: hsl(0, 0%, 100%, 0.5);
+  background-color: rgba(114, 114, 114, 0.486);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -255,6 +262,7 @@ a:active {
 p {
   color: white;
   text-shadow: 1px 1px 1px black;
+  font-size: larger;
 }
 
 h1 {
@@ -278,7 +286,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  background-color: hsla(0, 0%, 100%, 0.408);
+  background-color: rgba(114, 114, 114, 0.486);
   height: auto;
   padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -287,7 +295,8 @@ h2 {
 .display {
   font-size: 4rem;
   font-family: monospace;
-  text-shadow: 2px 2px 2px;
+  text-shadow: 2px 2px 2px black;
+  color: white;
 }
 
 .controls button {
@@ -369,7 +378,7 @@ h2 {
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: hsl(0, 0%, 100%, 0.5);
+  background-color: rgba(114, 114, 114, 0.486);
   width: 80svw;
   color: white;
   text-shadow: 1px 1px 1px black;
