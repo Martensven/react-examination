@@ -12,7 +12,6 @@ import ChangeBackgroundImage from "./components/ChangeBackground/Changebackgroun
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  //Vi lägger först in NavBar som konstant ska synas, sedan alla routes som ska synas i navbar. Vi avslutar sedan med ChangeBackgroundImage som styr bakgrundsbilden och själva temat på applikationen.
 
   return (
     <>
